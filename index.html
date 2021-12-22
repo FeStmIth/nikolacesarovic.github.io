@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="#index.html">Home</a>
+            <a href="#project">My Projects</a>
+            <a href="#about">About me</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>  
+    <div class="column">
+        <div class="words word-1">
+            <span>P</span>
+            <span>y</span>
+            <span>t</span>
+            <span>h</span>
+            <span>o</span>
+            <span>n</span>
+          </div>
+          <div class="words word-2">
+            <span>D</span>
+            <span>e</span>
+            <span>v</span>
+            <span>e</span>
+            <span>l</span>
+            <span>o</span>
+            <span>p</span>
+            <span>e</span>
+            <span>r</span>
+          </div>
+        <h3 style="color: orange;">Nikola Ćesarović</h3>
+        <img src="img/py_logo.png" alt="python logo" class="rotate">
+    </div>
+
+    <div class="about" id="about">
+        <h4>About Me:</h4>
+        <img src="img/me.jpg" alt="me">
+        <h5>Hello,I'm Nikola.I was born in Belgrade,<br> I got my interest in programming at the age of twenty. <br>I have one years experience with Python</h5>
+    </div>
+    <div class="contact" id="contact">
+        <h2 class="contact" id="contact">Contact me</h2>
+        <button class="center"><a href="mailto:nikola.cesarovic@gmail.com" style="color: yellow; background-color: green; text-decoration: none; text-align: center;">Send Mail</a></button>
+    </div>
+    </div>
+    <div class="project" id="project">
+        <h2 class="my_projects">My Project:</h2>
+        <img class="flask_logo" src="img/Logo_project/flask_and_django_logo.jpg" alt="Flask Logo">
+        <button class="btn" onclick="window.location.href='flask_django_home.html';">View Flask & Django Project</button>
+        <div class="project">
+        <img class="tkinter_logo" src="img/Logo_project/tkinter_logo.jpg" alt="Tkinter Logo">
+        <button class="btn" onclick="window.location.href='tkinter_home.html';">View Tkinter Project</button>
+        </div>
+    </div>
+    <footer class="footer">&copy 2021 Nikola Ćesarović</footer>
+</body>
+</html>

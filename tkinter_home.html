@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="tkinter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="column">
+    <div class="words word-1">
+        <span>W</span>
+        <span>e</span>
+        <span>l</span>
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>
+      </div>
+      <div class="words word-2">
+        <span>t</span>
+        <span>o</span>
+      </div>
+      <div class="words word-3">
+        <span>T</span>
+        <span>k</span>
+        <span>i</span>
+        <span>n</span>
+        <span>t</span>
+        <span>e</span>
+        <span>r</span>
+      </div>
+      <div class="words word-4">
+        <span>P</span>
+        <span>r</span>
+        <span>o</span>
+        <span>j</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+      </div>
+      <h1 style="text-align: center;color: red;">Finish test</h1>
+    <div class="slideshow-container" style="margin-top: 10px;">
+        <div class="mySlides fade">
+          <img src="img/my_projects/tkinter_project1.png" style="width:80%">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/my_projects/tkinter_project2.png" style="width:80%">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/my_projects/tkinter_project3.png" style="width:80%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/my_projects/tkinter_project4.png" style="width:80%">
+        </div>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <h1 style="color: green;">Other project</h1>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000);
+        }
+        </script>
+    <footer class="footer">&copy 2021 Nikola Ćesarović</footer>
+</body>
+</html>
